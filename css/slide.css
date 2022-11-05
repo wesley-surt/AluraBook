@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: rgb(135, 135, 160);
+}
+
+section {
+    display: inline-block;
+    position: relative;
+}
+
+.conteiner--carrosel {
+    overflow: auto;
+    height: 245px;
+    width: 438px;
+}
+
+.conteiner--carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    display: flex;
+    width: 584px;
+}
+
+.image img {
+    width: 145px;
+    height: 245px;
+}
+
+#image--atual {
+    transition: all 0.2s;
+}
+
+#proximo::before {
+    background: url(../image/proximo.png) center / contain;
+    right: -8px;
+}
+
+#voltar::before {
+    background: url(../image/voltar.png) center / contain;
+    left: -8px;
+}
+
+#proximo::before, #voltar::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
