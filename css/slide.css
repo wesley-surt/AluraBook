@@ -16,15 +16,21 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    display: inline-block;
+.conteiner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: calc(var(--largura-das-imagens) * 3 + var(--margin-top-bottom-das-imagens) * 4);
     position: relative;
+    width: 100vw;
 }
 
 .conteiner--carrossel {
     overflow: auto;
     height: calc(var(--altura-das-imagens) + var(--margin-top-bottom-das-imagens) * 2);
-    width: calc(var(--largura-das-imagens) * 3 + var(--margin-top-bottom-das-imagens) * 4);
+    width: inherit;
+    max-width: inherit;
     background: #EBECEE;
 }
 
@@ -64,26 +70,32 @@ section {
 
 #proximo::before {
     background: url(../image/proximo.png) center / contain;
-    right: -8px;
+    right: 2px;
 }
 
 #voltar::before {
     background: url(../image/voltar.png) center / contain;
-    left: -8px;
+    left: 2px;
 }
 
 #proximo::before, #voltar::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
+    content: '';
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+}
+
+.conjunto-de-bolinhas {
+    column-gap: .5rem;
+    display: flex;
+    margin: 1rem 0;
 }
 
 .conjunto-de-bolinhas > div {
-    width: 20px;
-    height: 20px;
     background-color: blue;
     border-radius: 50%;
+    height: 20px;
+    width: 20px;
 }
