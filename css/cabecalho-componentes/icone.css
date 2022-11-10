@@ -1,0 +1,15 @@
+
+.menu::before, .favorito::before {
+    height: 2rem;
+    width: 2rem;
+    content: '';
+    display: inline-block;
+}
+
+.menu::before {
+    background: url(../../image/Menu.png) center / contain no-repeat;
+}
+
+.favorito::before {
+    background: url(../../image/Favoritos.svg) center / contain no-repeat;
+}

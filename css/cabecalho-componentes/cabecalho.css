@@ -1,0 +1,21 @@
+@import url(../cabecalho-componentes/icone.css);
+@import url(../cabecalho-componentes/navegacao.css);
+
+:root {
+    --tamanho-dos-icones: 40px 
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__icone {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__icone-navegacao {
+    display: flex;
+    align-items: center;
+}

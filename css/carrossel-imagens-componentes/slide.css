@@ -1,0 +1,39 @@
+@import url(../carrossel-imagens-componentes/bolinhas.css);
+@import url(../carrossel-imagens-componentes/botao.css);
+@import url(../carrossel-imagens-componentes//imagens.css);
+
+:root {
+    --espaçamento-das-imagens: 1rem;
+    --margin-top-bottom-das-imagens: .5rem;
+    --altura-das-imagens: 307px;
+    --largura-das-imagens: 206px;
+}
+
+.secao--carrossel-imagens {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: calc(var(--largura-das-imagens) * 3 + var(--margin-top-bottom-das-imagens) * 4);
+    position: relative;
+    width: 100vw;
+}
+
+.carrossel-imagens {
+    overflow: auto;
+    height: calc(var(--altura-das-imagens) + var(--margin-top-bottom-das-imagens) * 2);
+    width: inherit;
+    max-width: inherit;
+    background: #EBECEE;
+}
+
+.carrossel-imagens::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    align-items: center;
+    display: flex;
+    column-gap: var(--espaçamento-das-imagens);
+    width: calc(var(--largura-das-imagens) * 5 + var(--espaçamento-das-imagens) * 3);
+}
