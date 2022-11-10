@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-.conteiner {
+.secao--carrossel-imagens {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ body {
     width: 100vw;
 }
 
-.conteiner--carrossel {
+.carrossel-imagens {
     overflow: auto;
     height: calc(var(--altura-das-imagens) + var(--margin-top-bottom-das-imagens) * 2);
     width: inherit;
@@ -34,9 +34,8 @@ body {
     background: #EBECEE;
 }
 
-.conteiner--carrossel::-webkit-scrollbar {
+.carrossel-imagens::-webkit-scrollbar {
     display: none;
-    transition: all 0.4s;
 }
 
 .slide {
@@ -44,7 +43,6 @@ body {
     display: flex;
     column-gap: var(--espaçamento-das-imagens);
     width: calc(var(--largura-das-imagens) * 5 + var(--espaçamento-das-imagens) * 3);
-    transition: all 0.4s;
 }
 
 #image--atual{
@@ -62,10 +60,7 @@ body {
 }
 
 #image--atual {
-    transition: all 0.2s;
-}
-
-.btn {
+    transition: all .4s;
 }
 
 #proximo::before {
@@ -87,13 +82,13 @@ body {
     width: 40px;
 }
 
-.conjunto-de-bolinhas {
+.bolinhas {
     column-gap: .5rem;
     display: flex;
     margin: 1rem 0;
 }
 
-.conjunto-de-bolinhas > div {
+.bolinhas > div {
     background-color: blue;
     border-radius: 50%;
     height: 20px;
