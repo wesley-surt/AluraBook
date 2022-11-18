@@ -21,10 +21,9 @@
 
 .carrossel-imagens {
     overflow: auto;
-    height: calc(var(--altura-das-imagens) + var(--margin-top-bottom-das-imagens) * 2);
+    padding: var(--margin-top-bottom-das-imagens);
     width: inherit;
     max-width: inherit;
-    background: #EBECEE;
 }
 
 .carrossel-imagens::-webkit-scrollbar {

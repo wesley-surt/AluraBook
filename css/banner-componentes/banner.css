@@ -1,0 +1,13 @@
+@import url(../banner-componentes/titulo-descricao-input.css);
+
+.banner {
+    background: linear-gradient( 97.54deg, #002F52 35.49%, #326589 165.37%);
+    opacity: 0.75;
+    text-align: center;
+}
+
+.caixa {
+    width:70%;
+    text-align: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.titulo {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--branco);
+    padding-top: 2rem;
+}
+
+.descricao {
+    color: var(--branco);
+    font-family: 'Poppins', sans-serif;
+    margin: 1rem 0;
+}
+
+.pesquisa {
+    margin-bottom: 2rem;
+    padding: .6rem 6rem;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    border-style: solid;
+    border-color: var(--branco);
+    border-width: 1px;
+    border-radius: 30px;
+    width: 198px;
+    color: var(--branco);
+}
+
+.pesquisa::placeholder {
+    color: var(--branco);
+    text-align: center;
+}
+
+.pesquisa::before {
+    display: inline-block;
+    content: '';
+    background: url(../../image/Vector.png) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
