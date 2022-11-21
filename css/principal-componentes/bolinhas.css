@@ -1,12 +1,12 @@
 .bolinhas {
     column-gap: .5rem;
     display: flex;
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 
 .bolinhas > div {
-    background-color: blue;
+    background-color: #C4C4C4;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
 }

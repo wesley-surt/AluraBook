@@ -5,10 +5,12 @@
 
 .image img {
     width: var(--largura-das-imagens);
-    height: var(--altura-das-imagens);
 }
 
 #image--atual{
-    margin-left: calc(((var(--largura-das-imagens) * -1) + (var(--espaçamento-das-imagens) * -1)) * 0);
     transition: all .4s;
+}
+
+image:nth-child(3) {
+    text-align: center;
 }

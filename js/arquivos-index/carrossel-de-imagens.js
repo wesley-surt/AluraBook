@@ -6,35 +6,35 @@ var botaoDeVoltar = document.getElementById('voltar');
 var imagemAtual = document.getElementById('image--atual');
 var imagens = document.querySelectorAll('.image');
 var bolinhas = document.querySelector('.bolinhas');
-var idDaBolinhaDaImagemAtual = 0;
+var idDaBolinha = 0;
 
 criaBolinhas(imagens, bolinhas);
 
-imagens.forEach(imagem => {
+/*imagens.forEach(imagem => {
     imagem.onmousedown = function() {
         imagemAtual.style.marginLeft = 0 + 'px';
     };
     
-})
+})*/
 
 botaoDeProximo.addEventListener('click', () => {
-    idDaBolinhaDaImagemAtual++;
+    idDaBolinha++;
 
-    if (idDaBolinhaDaImagemAtual >= imagens.length) {
-        idDaBolinhaDaImagemAtual = 0;
+    if (idDaBolinha >= imagens.length) {
+        idDaBolinha = 0;
     };
 
-    trocaDeImagem(idDaBolinhaDaImagemAtual, imagemAtual);
-    console.log(idDaBolinhaDaImagemAtual);
+    trocaDeImagem(idDaBolinha, imagens);
+    console.log(idDaBolinha);
 })
 
 botaoDeVoltar.addEventListener('click', () => {
-    idDaBolinhaDaImagemAtual--;
+    idDaBolinha--;
 
-    if (idDaBolinhaDaImagemAtual < 0) {
-        idDaBolinhaDaImagemAtual = imagens.length - 1;
+    if (idDaBolinha < 0) {
+        idDaBolinha = imagens.length - 1;
     }
 
-    trocaDeImagem(idDaBolinhaDaImagemAtual, imagemAtual);
-    console.log(idDaBolinhaDaImagemAtual);
+    trocaDeImagem(idDaBolinha, imagens);
+    console.log(idDaBolinha);
 })
