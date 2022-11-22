@@ -1,21 +1,12 @@
-import { criaBolinhas } from "../modulos-e-funcoes/funcoes/cria-quantdd-necessaria-de-bolinhas.js";
-import { trocaDeImagem } from "../modulos-e-funcoes/funcoes/troca-de-imagem.js";
+import { trocaDeImagem } from "../modulos-e-funcoes/funcoes/troca-imagem-bolinha.js";
 
 var botaoDeProximo = document.getElementById('proximo');
 var botaoDeVoltar = document.getElementById('voltar');
-var imagemAtual = document.getElementById('image--atual');
 var imagens = document.querySelectorAll('.image');
 var bolinhas = document.querySelector('.bolinhas');
 var idDaBolinha = 0;
 
-criaBolinhas(imagens, bolinhas);
-
-/*imagens.forEach(imagem => {
-    imagem.onmousedown = function() {
-        imagemAtual.style.marginLeft = 0 + 'px';
-    };
-    
-})*/
+document.getElementById('0').classList.add('bolinha-marcada');
 
 botaoDeProximo.addEventListener('click', () => {
     idDaBolinha++;
@@ -24,8 +15,9 @@ botaoDeProximo.addEventListener('click', () => {
         idDaBolinha = 0;
     };
 
-    trocaDeImagem(idDaBolinha, imagens);
-    console.log(idDaBolinha);
+    trocaDeImagem(idDaBolinha, imagens, bolinhas);
+    document.querySelector('.bolinha-marcada').classList.remove('bolinha-marcada');
+    document.getElementById(`${idDaBolinha}`).classList.add('bolinha-marcada');
 })
 
 botaoDeVoltar.addEventListener('click', () => {
@@ -35,6 +27,7 @@ botaoDeVoltar.addEventListener('click', () => {
         idDaBolinha = imagens.length - 1;
     }
 
-    trocaDeImagem(idDaBolinha, imagens);
-    console.log(idDaBolinha);
+    trocaDeImagem(idDaBolinha, imagens, bolinhas);
+    document.querySelector('.bolinha-marcada').classList.remove('bolinha-marcada');
+    document.getElementById(`${idDaBolinha}`).classList.add('bolinha-marcada');
 })

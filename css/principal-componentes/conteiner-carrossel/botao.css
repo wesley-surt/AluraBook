@@ -1,10 +1,10 @@
 #proximo::before {
-    background: url(../../image/proximo.png) center / contain;
+    background: url(../../../image/proximo.png) center / contain;
     right: 2px;
 }
 
 #voltar::before {
-    background: url(../../image/voltar.png) center / contain;
+    background: url(../../../image/voltar.png) center / contain;
     left: 2px;
 }
 

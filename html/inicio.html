@@ -20,17 +20,17 @@
         </section>
 
         <nav class="cabecalho__icone-navegacao">
-            <span class="icone icone-navegacao favorito"></span>
-            <a class="icone icone-navegacao compras"><img src="../image/Compras.png"></a>
-            <a class="icone icone-navegacao usuario"><img src="../image/Usuario.png"></a>
+            <a><span class="icone icone-navegacao favorito" href="#"></span></a>
+            <a class="icone icone-navegacao compras" href="#"><img src="../image/Compras.png"></a>
+            <a class="icone icone-navegacao usuario" href="#"><img src="../image/Usuario.png"></a>
         </nav>
     </header>
 
     <section class="banner">
         <div class="caixa">
-            <p class="caixa__titulo">Já sabe por onde começar?</p>
+            <p class="caixa__titulo texto-destaque">Já sabe por onde começar?</p>
 
-            <p class="caixa__descricao">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <h1 class="caixa__descricao">Encontre em nossa estante o que precisa para seu desenvolvimento!</h1>
         </div>
 
         <input type="text" class="pesquisa" placeholder="Qual será sua próxima leitura?">
@@ -38,11 +38,11 @@
     
     <section class="principal">
         
-        <p class="principal__titulo">
+        <h2 class="principal__titulo texto-destaque">
             Ùltimos lançamentos
-        </p>
+        </h2>
         
-        <div class="limita-carrossel">
+        <div class="conteiner-carrossel">
 
             <div class="btn" >
                 <i id="voltar"></i>
@@ -52,23 +52,39 @@
             </div>
     
             <div class="bolinhas">
+                <div id="0" class="bolinha"></div>
+                <div id="1" class="bolinha"></div>
+                <div id="2" class="bolinha"></div>
+                <div id="3" class="bolinha"></div>
             </div>
             
             <div class="carrossel-imagens">
                 <div class="slide">
-                    <div class="image" id="image--atual">
-                        <img src="../image/Liderança.png" alt="">
+                    <div class="image">
+                        <a href="#"><img src="../image/Liderança.png" alt=""></a>
                     </div>
                     <div class="image">
-                        <img src="../image/Javascript.png" alt="">
+                        <a href="#"><img src="../image/Javascript.png" alt=""></a>
                     </div>
                     <div class="image">
-                        <img src="../image/Portugol.png" alt="">
+                        <a href="#"><img src="../image/Portugol.png" alt=""></a>
                     </div>
                     <div class="image">
-                        <img src="../image/Guia Front-end.png" alt="">
+                        <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__primeira-parte">
+                <div class="primeira-parte__texto">
+                    <h3>Talvez você também se interesse por...</h3>
+                    <p class="texto-destaque">Angular 11 e Firebase</p>
+                    <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+
+                <img src="../image/Angular-1.png">
             </div>
         </div>
     </section>
