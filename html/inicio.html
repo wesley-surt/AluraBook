@@ -14,10 +14,10 @@
 
 <body>
     <header class="cabecalho">
-        <section class="cabecalho__icone">
+        <div class="cabecalho__icone">
             <span class="icone menu"></span>
             <i class="icone logo"><img src="../image/Logo.svg"></i>
-        </section>
+        </div>
 
         <nav class="cabecalho__icone-navegacao">
             <a><span class="icone icone-navegacao favorito" href="#"></span></a>
@@ -27,11 +27,11 @@
     </header>
 
     <section class="banner">
-        <div class="caixa">
+        <article class="caixa">
             <p class="caixa__titulo texto-destaque">Já sabe por onde começar?</p>
 
             <h1 class="caixa__descricao">Encontre em nossa estante o que precisa para seu desenvolvimento!</h1>
-        </div>
+        </article>
 
         <input type="text" class="pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
@@ -58,35 +58,49 @@
                 <div id="3" class="bolinha"></div>
             </div>
             
-            <div class="carrossel-imagens">
+            <article class="carrossel-imagens">
                 <div class="slide">
                     <div class="image">
                         <a href="#"><img src="../image/Liderança.png" alt=""></a>
                     </div>
-                    <div class="image">
-                        <a href="#"><img src="../image/Javascript.png" alt=""></a>
-                    </div>
+
                     <div class="image">
                         <a href="#"><img src="../image/Portugol.png" alt=""></a>
                     </div>
+
+                    <div class="image">
+                        <a href="#"><img src="../image/Javascript.png" alt=""></a>
+                    </div>
+
                     <div class="image">
                         <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
 
-        <div class="card">
+        <article class="card">
             <div class="card__primeira-parte">
                 <div class="primeira-parte__texto">
-                    <h3>Talvez você também se interesse por...</h3>
-                    <p class="texto-destaque">Angular 11 e Firebase</p>
-                    <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <h3 class="primeira-parte__titulo-1">Talvez você também se interesse por...</h3>
+                    <p class="primeira-parte__titulo-2 texto-destaque">Angular 11 e Firebase</p>
+                    <p class="descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 </div>
 
-                <img src="../image/Angular-1.png">
+                <div class="primeira-parte__image">
+                    <img src="../image/Angular-1.png">
+                </div>
             </div>
-        </div>
+
+            <div class="card__segunda-parte">
+                <div class="segunda-parte__icone">
+                    <img class="segunda-parte__icone-favorito" src="../image/Favoritos.svg">
+                    <img class="segunda-parte__icone-compras" src="../image/Compras.png">
+                </div>
+
+                <button class="card__botao" type="submit">Saiba mais</button>
+            </div>
+        </article>
     </section>
 
     <script type="module" src="../js/arquivos-index/carrossel-de-imagens.js"></script>

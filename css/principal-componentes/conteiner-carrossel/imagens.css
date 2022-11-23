@@ -1,6 +1,5 @@
 .image {
     margin-top: var(--margin-top-bottom-das-imagens);
-    margin-bottom: var(--margin-top-bottom-das-imagens);
     transition: all 1s;
 }
 

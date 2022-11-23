@@ -1,0 +1,5 @@
+@import url(texto-imagem.css);
+
+.card__primeira-parte {
+    display: flex;
+}
