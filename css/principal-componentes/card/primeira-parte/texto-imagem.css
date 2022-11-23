@@ -1,6 +1,7 @@
 .primeira-parte__texto {
     font-family: 'Poppins', 'sans-serif';
     margin-right: .5rem;
+    max-width: 23rem;
 }
 
 .primeira-parte__titulo-1 {
@@ -21,8 +22,8 @@
 
 .descricao {
     font-size: 14px;
-    margin-right: 2rem;
     line-height: 1.2rem;
+    margin-right: 2rem;
 }
 
 .primeira-parte__image img {

@@ -9,16 +9,6 @@
     --largura-das-imagens: 184px;
 }
 
-
-
-.principal__titulo {
-    background: var(--branco);
-    color: #EB9B00;
-    display: block;
-    padding: 1.5rem 1.5rem 1rem 1.5rem;
-    text-align: center;
-}
-
 .conteiner-carrossel {
     display: flex;
     flex-direction: column;
