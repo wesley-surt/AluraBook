@@ -45,17 +45,17 @@
         <div class="conteiner-carrossel">
 
             <div class="btn" >
-                <i id="voltar"></i>
+                <i data-primeiraSecao="voltar"></i>
             </div>
             <div class="btn" >
-                <i id="proximo"></i>
+                <i data-primeiraSecao="proximo"></i>
             </div>
     
             <div class="bolinhas">
-                <div id="0" class="bolinha"></div>
-                <div id="1" class="bolinha"></div>
-                <div id="2" class="bolinha"></div>
-                <div id="3" class="bolinha"></div>
+                <div data-primeiraSecao="0" class="bolinha"></div>
+                <div data-primeiraSecao="1" class="bolinha"></div>
+                <div data-primeiraSecao="2" class="bolinha"></div>
+                <div data-primeiraSecao="3" class="bolinha"></div>
             </div>
             
             <article class="carrossel-imagens">
@@ -105,6 +105,76 @@
         </article>
     </section>
 
-    <script type="module" src="../js/arquivos-index/carrossel-de-imagens.js"></script>
+    <section class="principal">
+        
+        <h2 class="principal__titulo texto-destaque">
+            Ùltimos lançamentos
+        </h2>
+        
+        <div class="conteiner-carrossel">
+
+            <div class="btn" >
+                <i data-segundaSecao="voltar"></i>
+            </div>
+            <div class="btn" >
+                <i data-segundaSecao="proximo"></i>
+            </div>
+    
+            <div class="bolinhas">
+                <div data-segundaSecao="0" class="bolinha"></div>
+                <div data-segundaSecao="1" class="bolinha"></div>
+                <div data-segundaSecao="2" class="bolinha"></div>
+                <div data-segundaSecao="3" class="bolinha"></div>
+            </div>
+            
+            <article class="carrossel-imagens">
+                <div class="slide">
+                    <div class="image">
+                        <a href="#"><img src="../image/Liderança.png" alt=""></a>
+                    </div>
+
+                    <div class="image">
+                        <a href="#"><img src="../image/Portugol.png" alt=""></a>
+                    </div>
+
+                    <div class="image">
+                        <a href="#"><img src="../image/Javascript.png" alt=""></a>
+                    </div>
+
+                    <div class="image">
+                        <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <article class="card">
+            <div class="card__primeira-parte">
+                <div class="primeira-parte__texto">
+                    <h3 class="primeira-parte__titulo-1">Talvez você também se interesse por...</h3>
+                    <p class="primeira-parte__titulo-2 texto-destaque">Angular 11 e Firebase</p>
+                    <p class="descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+
+                <div class="primeira-parte__image">
+                    <img src="../image/Angular-1.png">
+                </div>
+            </div>
+
+            <div class="card__segunda-parte">
+                <div class="segunda-parte__icone">
+                    <img class="segunda-parte__icone-favorito" src="../image/Favoritos.svg">
+                    <img class="segunda-parte__icone-compras" src="../image/Compras.png">
+                </div>
+
+                <div class="segunda-parte__botao">
+                    <a class="segunda-parte__botao___btn" type="submit" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script type="module" src="../js/arquivos-index/carrossel-imagens-primeira-secao.js"></script>
+    <script type="module" src="../js/arquivos-index/carrossel-imagens-segunda-secao.js"></script>
 </body>
 </html>

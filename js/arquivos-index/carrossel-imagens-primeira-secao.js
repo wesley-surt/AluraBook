@@ -6,7 +6,8 @@ var imagens = document.querySelectorAll('.image');
 var bolinhas = document.querySelector('.bolinhas');
 var idDaBolinha = 0;
 
-document.getElementById('0').classList.add('bolinha-marcada');
+document.querySelector('[data-primeiraSecao="0"]').classList.add('bolinha-marcada');
+document.querySelector('[data-segundaSecao="0"]').classList.add('bolinha-marcada');
 
 botaoDeProximo.addEventListener('click', () => {
     idDaBolinha++;
