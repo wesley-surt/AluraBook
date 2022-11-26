@@ -2,10 +2,12 @@
 @import url(cabecalho-componentes/cabecalho.css);
 @import url(banner-componentes/banner.css);
 @import url(base/texto-destaque.css);
+@import url(topcos-componentes/topicos.css);
 
 :root {
     --branco: #FFFFFF;
     --cinza: #EBECEE;
+    --laranja: #EB9B00;
 }
 
 body {

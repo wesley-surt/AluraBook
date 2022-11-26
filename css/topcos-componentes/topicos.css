@@ -1,0 +1,18 @@
+@import url(topicos-item.css);
+
+.topicos {
+    align-items: center;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', 'sans-serif';
+    opacity: 0.75;
+    padding: 1rem 0.5rem;
+}
+
+.topicos__titulo {
+    margin: .8rem 0 1.5rem 0;
+    font-size: 18px;
+    font-weight: 400;
+}
