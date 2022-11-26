@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wesley Bruno de Souza">
+    <meta name="description" content="Este site vai te ajudar na escolha dos melhores livros. 
+    Desde os que já lançaram faz um tempo até os mais recentes">
+    <meta name="keywords" content="livros,leitores,livros pdf">
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,19 +43,19 @@
     <section class="principal">
         
         <h2 class="principal__titulo texto-destaque">
-            Ùltimos lançamentos
+            ÚLTIMOS LANÇAMENTOS
         </h2>
         
         <div class="conteiner-carrossel">
 
             <div class="btn" >
-                <i data-primeiraSecao="voltar"></i>
+                <i data-primeiraSecao="voltar" class="voltar"></i>
             </div>
             <div class="btn" >
-                <i data-primeiraSecao="proximo"></i>
+                <i data-primeiraSecao="proximo" class="proximo"></i>
             </div>
     
-            <div class="bolinhas">
+            <div data-primeiraSecao="bolinhas" class="bolinhas">
                 <div data-primeiraSecao="0" class="bolinha"></div>
                 <div data-primeiraSecao="1" class="bolinha"></div>
                 <div data-primeiraSecao="2" class="bolinha"></div>
@@ -60,19 +64,19 @@
             
             <article class="carrossel-imagens">
                 <div class="slide">
-                    <div class="image">
+                    <div data-primeiraSecao="image" class="image" id="0">
                         <a href="#"><img src="../image/Liderança.png" alt=""></a>
                     </div>
 
-                    <div class="image">
+                    <div data-primeiraSecao="image" class="image" id="1">
                         <a href="#"><img src="../image/Portugol.png" alt=""></a>
                     </div>
 
-                    <div class="image">
+                    <div data-primeiraSecao="image" class="image" id="2">
                         <a href="#"><img src="../image/Javascript.png" alt=""></a>
                     </div>
 
-                    <div class="image">
+                    <div data-primeiraSecao="image" class="image" id="3">
                         <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
                     </div>
                 </div>
@@ -108,19 +112,19 @@
     <section class="principal">
         
         <h2 class="principal__titulo texto-destaque">
-            Ùltimos lançamentos
+            MAIS VENDIDOS
         </h2>
         
         <div class="conteiner-carrossel">
 
             <div class="btn" >
-                <i data-segundaSecao="voltar"></i>
+                <i data-segundaSecao="voltar" class="voltar"></i>
             </div>
             <div class="btn" >
-                <i data-segundaSecao="proximo"></i>
+                <i data-segundaSecao="proximo" class="proximo"></i>
             </div>
     
-            <div class="bolinhas">
+            <div data-segundaSecao="bolinhas" class="bolinhas">
                 <div data-segundaSecao="0" class="bolinha"></div>
                 <div data-segundaSecao="1" class="bolinha"></div>
                 <div data-segundaSecao="2" class="bolinha"></div>
@@ -129,20 +133,20 @@
             
             <article class="carrossel-imagens">
                 <div class="slide">
-                    <div class="image">
-                        <a href="#"><img src="../image/Liderança.png" alt=""></a>
+                    <div data-segundaSecao="image" class="image">
+                        <a href="#"><img src="../image/MEAN.png" alt=""></a>
                     </div>
 
-                    <div class="image">
-                        <a href="#"><img src="../image/Portugol.png" alt=""></a>
+                    <div data-segundaSecao="image" class="image">
+                        <a href="#"><img src="../image/Gestão.png" alt=""></a>
                     </div>
 
-                    <div class="image">
-                        <a href="#"><img src="../image/Javascript.png" alt=""></a>
+                    <div data-segundaSecao="image" class="image">
+                        <a href="#"><img src="../image/Gestão2.png" alt=""></a>
                     </div>
 
-                    <div class="image">
-                        <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
+                    <div data-segundaSecao="image" class="image">
+                        <a href="#"><img src="../image/Construct2.png" alt=""></a>
                     </div>
                 </div>
             </article>
@@ -151,13 +155,20 @@
         <article class="card">
             <div class="card__primeira-parte">
                 <div class="primeira-parte__texto">
-                    <h3 class="primeira-parte__titulo-1">Talvez você também se interesse por...</h3>
-                    <p class="primeira-parte__titulo-2 texto-destaque">Angular 11 e Firebase</p>
-                    <p class="descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <ul class="lista-icon">
+                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                    </ul>
+                    <h3 class="primeira-parte__titulo-1">Autora do Mês</h3>
+                    <p class="primeira-parte__titulo-2 texto-destaque">Juliana Agarikov</p>
+                    <p class="descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
                 </div>
 
                 <div class="primeira-parte__image">
-                    <img src="../image/Angular-1.png">
+                    <img src="../image/Perfil-escritora.png">
                 </div>
             </div>
 

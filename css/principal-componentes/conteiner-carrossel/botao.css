@@ -1,14 +1,14 @@
-#proximo::before {
+.proximo::before {
     background: url(../../../image/proximo.png) center / contain;
     right: 2px;
 }
 
-#voltar::before {
+.voltar::before {
     background: url(../../../image/voltar.png) center / contain;
     left: 2px;
 }
 
-#proximo::before, #voltar::before {
+.proximo::before, .voltar::before {
     border-radius: 50%;
     content: '';
     height: 40px;

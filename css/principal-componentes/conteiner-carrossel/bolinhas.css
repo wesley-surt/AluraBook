@@ -12,6 +12,10 @@
     width: 10px;
 }
 
-.bolinha-marcada {
+.bolinha-marcada--primeiraSecao {
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+}
+
+.bolinha-marcada--segundaSecao {
     background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 }

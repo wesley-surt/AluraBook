@@ -1,34 +1,32 @@
-import { trocaDeImagem } from "../modulos-e-funcoes/funcoes/troca-imagem-bolinha.js";
+import { trocaDeImagem } from "../funcoes/troca-imagem.js";
 
-var botaoDeProximo = document.getElementById('proximo');
-var botaoDeVoltar = document.getElementById('voltar');
-var imagens = document.querySelectorAll('.image');
-var bolinhas = document.querySelector('.bolinhas');
+var $proximoSegundaSecao = document.querySelector('[data-segundaSecao="proximo"]');
+var $voltarSegundaSecao = document.querySelector('[data-segundaSecao="voltar"]');
+var $imagensSegundaSecao = document.querySelectorAll('[data-segundaSecao="image"]');
 var idDaBolinha = 0;
 
-document.querySelector('[data-primeiraSecao="0"]').classList.add('bolinha-marcada');
-document.querySelector('[data-segundaSecao="0"]').classList.add('bolinha-marcada');
+document.querySelector('[data-segundaSecao="0"]').classList.add('bolinha-marcada--segundaSecao');
 
-botaoDeProximo.addEventListener('click', () => {
+$proximoSegundaSecao.addEventListener('click', () => {
     idDaBolinha++;
 
-    if (idDaBolinha >= imagens.length) {
+    if (idDaBolinha >= $imagensSegundaSecao.length) {
         idDaBolinha = 0;
     };
 
-    trocaDeImagem(idDaBolinha, imagens, bolinhas);
-    document.querySelector('.bolinha-marcada').classList.remove('bolinha-marcada');
-    document.getElementById(`${idDaBolinha}`).classList.add('bolinha-marcada');
+    trocaDeImagem(idDaBolinha, $imagensSegundaSecao);
+    document.querySelector('.bolinha-marcada--segundaSecao').classList.remove('bolinha-marcada--segundaSecao');
+    document.querySelector(`[data-segundaSecao="${idDaBolinha}"`).classList.add('bolinha-marcada--segundaSecao');
 })
 
-botaoDeVoltar.addEventListener('click', () => {
+$voltarSegundaSecao.addEventListener('click', () => {
     idDaBolinha--;
 
     if (idDaBolinha < 0) {
-        idDaBolinha = imagens.length - 1;
+        idDaBolinha = $imagensSegundaSecao.length - 1;
     }
 
-    trocaDeImagem(idDaBolinha, imagens, bolinhas);
-    document.querySelector('.bolinha-marcada').classList.remove('bolinha-marcada');
-    document.getElementById(`${idDaBolinha}`).classList.add('bolinha-marcada');
+    trocaDeImagem(idDaBolinha, $imagensSegundaSecao);
+    document.querySelector('.bolinha-marcada--segundaSecao').classList.remove('bolinha-marcada--segundaSecao');
+    document.querySelector(`[data-segundaSecao="${idDaBolinha}"`).classList.add('bolinha-marcada--segundaSecao');
 })
