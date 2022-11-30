@@ -11,8 +11,8 @@
 .proximo::before, .voltar::before {
     border-radius: 50%;
     content: '';
-    height: 40px;
+    height: 2.5rem;
     position: absolute;
     top: 50%;
-    width: 40px;
+    width: 2.5rem;
 }

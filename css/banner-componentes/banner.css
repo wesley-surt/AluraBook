@@ -1,7 +1,7 @@
 @import url(../banner-componentes/titulo-descricao-input.css);
 
 .banner {
-    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    background: var(--azul-gradiente);
     opacity: 0.75;
     text-align: center;
     padding: 2rem;

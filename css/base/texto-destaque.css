@@ -1,5 +1,5 @@
 .texto-destaque {
     font-weight: 700;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-family: var(--fonte-principal);
 }

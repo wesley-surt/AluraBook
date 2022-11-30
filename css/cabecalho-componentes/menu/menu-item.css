@@ -1,0 +1,17 @@
+.cabecalho__item {
+    padding: 1.2rem;
+}
+
+.icone__menu___categoria {
+    color: #EB9B00;
+    font-weight: 700;
+}
+
+.cabecalho__item a {
+    background: var(--azul-gradiente);
+    background-clip: text;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

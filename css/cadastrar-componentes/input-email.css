@@ -1,0 +1,13 @@
+.caixa__input-email {
+    padding: .6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 20rem;
+    border: 1px solid;
+}
+
+.caixa__input-email::placeholder {
+    background: url(../../image/Vector1.png) left no-repeat;
+    font-weight: 500;
+    padding-left: 2rem;
+}

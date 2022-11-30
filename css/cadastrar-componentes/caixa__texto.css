@@ -1,0 +1,17 @@
+.caixa__texto {
+    max-width: 18.7rem;
+}
+
+.caixa__texto___titulo {
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: var(--azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.caixa__texto___descricao {
+    line-height: 1.5rem;
+    margin: .8rem 0;
+}

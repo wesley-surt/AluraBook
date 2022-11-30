@@ -1,5 +1,5 @@
 .primeira-parte__texto {
-    font-family: 'Poppins', 'sans-serif';
+    font-family: var(--fonte-principal);
     margin-right: .5rem;
     max-width: 23rem;
 }
@@ -13,7 +13,7 @@
 
 .primeira-parte__titulo-2 {
     margin: .8rem 1rem .8rem 0;
-    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    background: var(--azul-gradiente);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -21,11 +21,11 @@
 }
 
 .descricao {
-    font-size: 14px;
+    font-size: .9rem;
     line-height: 1.2rem;
     margin-right: 1.8rem;
 }
 
 .primeira-parte__image img {
-    min-width: 164px;
+    min-width: 10.2rem;
 }

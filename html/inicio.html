@@ -11,6 +11,7 @@
     <meta name="keywords" content="livros,leitores,livros pdf">
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/responsivo/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,7 +20,21 @@
 <body>
     <header class="cabecalho">
         <div class="cabecalho__icone">
-            <span class="icone menu"></span>
+            <input type="checkbox" id="menu" class="cabecalho__icone___botao">
+            <label for="menu">
+                <span class="icone menu"></span>
+            </label>
+
+            <ul class="cabecalho__icone___menu">
+                <li class="cabecalho__item icone__menu___categoria">Categoria</li>
+                <li class="cabecalho__item icone__menu___item"><a href="#">PROGRAMAÇÃO</a></li>
+                <li class="cabecalho__item icone__menu___item"><a href="#">FRONT-END</a></li>
+                <li class="cabecalho__item icone__menu___item"><a href="#">INFRAESTRUTURA</a></li>
+                <li class="cabecalho__item icone__menu___item"><a href="#">BUSINESS</a></li>
+                <li class="cabecalho__item icone__menu___item"><a href="#">DESIGN & UX</a></li>
+            </ul>
+            
+            
             <i class="icone logo"><img src="../image/Logo.svg"></i>
         </div>
 
@@ -37,7 +52,7 @@
             <h1 class="caixa__descricao">Encontre em nossa estante o que precisa para seu desenvolvimento!</h1>
         </article>
 
-        <input type="text" class="pesquisa" placeholder="Qual será sua próxima leitura?">
+        <input type="text" class="pesquisa campo-input" placeholder="Qual será sua próxima leitura?">
     </section>
     
     <section class="principal">
@@ -205,7 +220,6 @@
                 <a href="#" class="lista__link">
                     <li class="lista__link___item">HTML & CSS</li>
                 </a>
-                
                 <a href="#" class="lista__link">
                     <li class="lista__link___item">Python</li>
                 </a>
@@ -218,6 +232,31 @@
             </ul>
         </div>
     </section>
+
+    <section class="cadastrar">
+        <div class="cadastrar__caixa">
+            <article class="caixa__texto">
+                <h3 class="caixa__texto___titulo">Fique por dentro das novidados!</h3>
+                
+                <p class="caixa__texto___descricao">
+                    Atualização de e-books, novos livro, promoções e outros
+                </p>
+            </article>
+
+            <div>
+                <input type="email" class="caixa__input-email campo-input" placeholder="Cadastre seu e-mail">
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div>
+            <div class="rodape__logo-alura">
+                <img src="../image/Grupo Alura.png">
+            </div>
+        </div>
+    </footer>
 
     <script type="module" src="../js/arquivos-index/carrossel-imagens-primeira-secao.js"></script>
     <script type="module" src="../js/arquivos-index/carrossel-imagens-segunda-secao.js"></script>

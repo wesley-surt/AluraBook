@@ -6,7 +6,7 @@
 
 .lista__link {
     color: var(--branco);
-    font-size: 14px;
+    font-size: .9rem;
     text-decoration: none;
 }
 

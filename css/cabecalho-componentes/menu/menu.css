@@ -1,0 +1,21 @@
+@import url(menu-item.css);
+
+.cabecalho__icone___botao:checked ~ .cabecalho__icone___menu {
+    display: inline-block;
+}
+
+.cabecalho__icone___botao {
+    display: none;
+}
+
+.cabecalho__icone___menu {
+    background: var(--branco);
+    box-shadow: 0 6px 6px 2px rgba(0, 0, 0, 0.3);
+    display: none;
+    font-family: var(--fonte-principal);
+    min-width: 18.7rem;
+    position: absolute;
+    top: 99%;
+    transition-duration: .4s;
+    z-index: 1;
+}

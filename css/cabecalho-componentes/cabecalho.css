@@ -1,13 +1,10 @@
 @import url(../cabecalho-componentes/icone.css);
 
-:root {
-    --tamanho-dos-icones: 40px 
-}
-
 .cabecalho {
+    background: var(--branco);
     display: flex;
     justify-content: space-between;
-    background: var(--branco);
+    position: relative;
 }
 
 .cabecalho__icone {

@@ -1,0 +1,8 @@
+.rodape {
+    border-top: 1px solid #7c7c7c;
+}
+
+.rodape__logo-alura img {
+    padding: 1.5rem;
+    width: 6.2rem;
+}
