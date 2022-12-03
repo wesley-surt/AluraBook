@@ -1,14 +1,14 @@
 @import url(menu-item.css);
 
-.cabecalho__icone___botao:checked ~ .cabecalho__icone___menu {
+.cabecalho__nav___botao:checked ~ .cabecalho__nav___menu {
     display: inline-block;
 }
 
-.cabecalho__icone___botao {
+.cabecalho__nav___botao {
     display: none;
 }
 
-.cabecalho__icone___menu {
+.cabecalho__nav___menu {
     background: var(--branco);
     box-shadow: 0 6px 6px 2px rgba(0, 0, 0, 0.3);
     display: none;

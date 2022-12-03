@@ -1,18 +1,41 @@
 @import url(../cabecalho-componentes/icone.css);
 
-.cabecalho {
+header {
     background: var(--branco);
+}
+
+.cabecalho {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.cabecalho__icone {
+.cabecalho__nav {
     display: flex;
     align-items: center;
 }
 
-.cabecalho__icone-navegacao {
+.cabecalho__nav-link {
+    display: none;
+}
+
+.cabecalho__nav-icone {
     display: flex;
     align-items: center;
+}
+
+.nav-link__item {
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+.nav-link__item a {
+    text-decoration: none;
+    color: #000;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho__imagem-logo {
+    margin-right: 3rem;
+    display: none;
 }

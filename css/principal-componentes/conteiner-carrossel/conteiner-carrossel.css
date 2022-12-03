@@ -9,6 +9,12 @@
     --largura-das-imagens: 11.5rem;
 }
 
+.principal__conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .conteiner-carrossel {
     display: flex;
     flex-direction: column;

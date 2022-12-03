@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <title>AluraBook Inicio</title>
     <meta charset="UTF-8">
@@ -18,31 +18,46 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="cabecalho__icone">
-            <input type="checkbox" id="menu" class="cabecalho__icone___botao">
-            <label for="menu">
-                <span class="icone menu"></span>
-            </label>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho__nav">
+                <input type="checkbox" id="menu" class="cabecalho__nav___botao">
+                <label for="menu">
+                    <span class="icone menu"></span>
+                </label>
 
-            <ul class="cabecalho__icone___menu">
-                <li class="cabecalho__item icone__menu___categoria">Categoria</li>
-                <li class="cabecalho__item icone__menu___item"><a href="#">PROGRAMAÇÃO</a></li>
-                <li class="cabecalho__item icone__menu___item"><a href="#">FRONT-END</a></li>
-                <li class="cabecalho__item icone__menu___item"><a href="#">INFRAESTRUTURA</a></li>
-                <li class="cabecalho__item icone__menu___item"><a href="#">BUSINESS</a></li>
-                <li class="cabecalho__item icone__menu___item"><a href="#">DESIGN & UX</a></li>
-            </ul>
-            
-            
-            <i class="icone logo"><img src="../image/Logo.svg"></i>
+                <ul class="cabecalho__nav___menu">
+                    <li class="cabecalho__item icone__menu___categoria">Categoria</li>
+                    <li class="cabecalho__item icone__menu___item"><a href="#">PROGRAMAÇÃO</a></li>
+                    <li class="cabecalho__item icone__menu___item"><a href="#">FRONT-END</a></li>
+                    <li class="cabecalho__item icone__menu___item"><a href="#">INFRAESTRUTURA</a></li>
+                    <li class="cabecalho__item icone__menu___item"><a href="#">BUSINESS</a></li>
+                    <li class="cabecalho__item icone__menu___item"><a href="#">DESIGN & UX</a></li>
+                </ul>
+                
+                <i class="icone logo"><img src="../image/Logo.svg"></i>
+
+                <span class="cabecalho__imagem-logo"><img src="../image/AluraBooks.png"></span>
+
+                <ul class="cabecalho__nav-link">
+                    <div class="nav-link__item">
+                        <a href="#">CATEGORIAS</a>
+                    </div>
+                    <li class="nav-link__item">
+                        <a href="#">FAVORITOS</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#">MINHA ESTANTE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="cabecalho__nav-icone">
+                <a><span class="icone icone-navegacao favorito" href="#"></span></a>
+                <a class="icone icone-navegacao compras" href="#"><img src="../image/Compras.png"></a>
+                <a class="icone icone-navegacao usuario" href="#"><img src="../image/Usuario.png"></a>
+            </nav>
         </div>
-
-        <nav class="cabecalho__icone-navegacao">
-            <a><span class="icone icone-navegacao favorito" href="#"></span></a>
-            <a class="icone icone-navegacao compras" href="#"><img src="../image/Compras.png"></a>
-            <a class="icone icone-navegacao usuario" href="#"><img src="../image/Usuario.png"></a>
-        </nav>
     </header>
 
     <section class="banner">
@@ -61,67 +76,69 @@
             ÚLTIMOS LANÇAMENTOS
         </h2>
         
-        <div class="conteiner-carrossel">
+        <div class="principal__conteiner">
+            <div class="conteiner-carrossel">
 
-            <div class="btn" >
-                <i data-primeiraSecao="voltar" class="voltar"></i>
+                <div class="btn" >
+                    <i data-primeiraSecao="voltar" class="voltar"></i>
+                </div>
+                <div class="btn" >
+                    <i data-primeiraSecao="proximo" class="proximo"></i>
+                </div>
+        
+                <div data-primeiraSecao="bolinhas" class="bolinhas">
+                    <div data-primeiraSecao="0" class="bolinha"></div>
+                    <div data-primeiraSecao="1" class="bolinha"></div>
+                    <div data-primeiraSecao="2" class="bolinha"></div>
+                    <div data-primeiraSecao="3" class="bolinha"></div>
+                </div>
+                
+                <article class="carrossel-imagens">
+                    <div class="slide">
+                        <div data-primeiraSecao="image" class="image" id="0">
+                            <a href="#"><img src="../image/Liderança.png" alt=""></a>
+                        </div>
+
+                        <div data-primeiraSecao="image" class="image" id="1">
+                            <a href="#"><img src="../image/Portugol.png" alt=""></a>
+                        </div>
+
+                        <div data-primeiraSecao="image" class="image" id="2">
+                            <a href="#"><img src="../image/Javascript.png" alt=""></a>
+                        </div>
+
+                        <div data-primeiraSecao="image" class="image" id="3">
+                            <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="btn" >
-                <i data-primeiraSecao="proximo" class="proximo"></i>
-            </div>
-    
-            <div data-primeiraSecao="bolinhas" class="bolinhas">
-                <div data-primeiraSecao="0" class="bolinha"></div>
-                <div data-primeiraSecao="1" class="bolinha"></div>
-                <div data-primeiraSecao="2" class="bolinha"></div>
-                <div data-primeiraSecao="3" class="bolinha"></div>
-            </div>
-            
-            <article class="carrossel-imagens">
-                <div class="slide">
-                    <div data-primeiraSecao="image" class="image" id="0">
-                        <a href="#"><img src="../image/Liderança.png" alt=""></a>
+
+            <article class="card">
+                <div class="card__primeira-parte">
+                    <div class="primeira-parte__texto">
+                        <h3 class="primeira-parte__titulo-1">Talvez você também se interesse por...</h3>
+                        <p class="primeira-parte__titulo-2 texto-destaque">Angular 11 e Firebase</p>
+                        <p class="descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
                     </div>
 
-                    <div data-primeiraSecao="image" class="image" id="1">
-                        <a href="#"><img src="../image/Portugol.png" alt=""></a>
+                    <div class="primeira-parte__image">
+                        <img src="../image/Angular-1.png">
+                    </div>
+                </div>
+
+                <div class="card__segunda-parte">
+                    <div class="segunda-parte__icone">
+                        <img class="segunda-parte__icone-favorito" src="../image/Favoritos.svg">
+                        <img class="segunda-parte__icone-compras" src="../image/Compras.png">
                     </div>
 
-                    <div data-primeiraSecao="image" class="image" id="2">
-                        <a href="#"><img src="../image/Javascript.png" alt=""></a>
-                    </div>
-
-                    <div data-primeiraSecao="image" class="image" id="3">
-                        <a href="#"><img src="../image/Guia Front-end.png" alt=""></a>
+                    <div class="segunda-parte__botao">
+                        <a class="segunda-parte__botao___btn" type="submit" href="#">Saiba mais</a>
                     </div>
                 </div>
             </article>
         </div>
-
-        <article class="card">
-            <div class="card__primeira-parte">
-                <div class="primeira-parte__texto">
-                    <h3 class="primeira-parte__titulo-1">Talvez você também se interesse por...</h3>
-                    <p class="primeira-parte__titulo-2 texto-destaque">Angular 11 e Firebase</p>
-                    <p class="descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                </div>
-
-                <div class="primeira-parte__image">
-                    <img src="../image/Angular-1.png">
-                </div>
-            </div>
-
-            <div class="card__segunda-parte">
-                <div class="segunda-parte__icone">
-                    <img class="segunda-parte__icone-favorito" src="../image/Favoritos.svg">
-                    <img class="segunda-parte__icone-compras" src="../image/Compras.png">
-                </div>
-
-                <div class="segunda-parte__botao">
-                    <a class="segunda-parte__botao___btn" type="submit" href="#">Saiba mais</a>
-                </div>
-            </div>
-        </article>
     </section>
 
     <section class="principal">
@@ -130,74 +147,75 @@
             MAIS VENDIDOS
         </h2>
         
-        <div class="conteiner-carrossel">
+        <div class="principal__conteiner">
+            <div class="conteiner-carrossel">
+                <div class="btn" >
+                    <i data-segundaSecao="voltar" class="voltar"></i>
+                </div>
+                <div class="btn" >
+                    <i data-segundaSecao="proximo" class="proximo"></i>
+                </div>
+        
+                <div data-segundaSecao="bolinhas" class="bolinhas">
+                    <div data-segundaSecao="0" class="bolinha"></div>
+                    <div data-segundaSecao="1" class="bolinha"></div>
+                    <div data-segundaSecao="2" class="bolinha"></div>
+                    <div data-segundaSecao="3" class="bolinha"></div>
+                </div>
+                
+                <article class="carrossel-imagens">
+                    <div class="slide">
+                        <div data-segundaSecao="image" class="image">
+                            <a href="#"><img src="../image/MEAN.png" alt=""></a>
+                        </div>
 
-            <div class="btn" >
-                <i data-segundaSecao="voltar" class="voltar"></i>
+                        <div data-segundaSecao="image" class="image">
+                            <a href="#"><img src="../image/Gestão.png" alt=""></a>
+                        </div>
+
+                        <div data-segundaSecao="image" class="image">
+                            <a href="#"><img src="../image/Gestão2.png" alt=""></a>
+                        </div>
+
+                        <div data-segundaSecao="image" class="image">
+                            <a href="#"><img src="../image/Construct2.png" alt=""></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="btn" >
-                <i data-segundaSecao="proximo" class="proximo"></i>
-            </div>
-    
-            <div data-segundaSecao="bolinhas" class="bolinhas">
-                <div data-segundaSecao="0" class="bolinha"></div>
-                <div data-segundaSecao="1" class="bolinha"></div>
-                <div data-segundaSecao="2" class="bolinha"></div>
-                <div data-segundaSecao="3" class="bolinha"></div>
-            </div>
-            
-            <article class="carrossel-imagens">
-                <div class="slide">
-                    <div data-segundaSecao="image" class="image">
-                        <a href="#"><img src="../image/MEAN.png" alt=""></a>
+
+            <article class="card">
+                <div class="card__primeira-parte">
+                    <div class="primeira-parte__texto">
+                        <ul class="lista-icon">
+                            <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                            <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                            <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                            <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                            <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
+                        </ul>
+                        <h3 class="primeira-parte__titulo-1">Autora do Mês</h3>
+                        <p class="primeira-parte__titulo-2 texto-destaque">Juliana Agarikov</p>
+                        <p class="descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
                     </div>
 
-                    <div data-segundaSecao="image" class="image">
-                        <a href="#"><img src="../image/Gestão.png" alt=""></a>
+                    <div class="primeira-parte__image">
+                        <img src="../image/Perfil-escritora.png">
+                    </div>
+                </div>
+
+                <div class="card__segunda-parte">
+                    <div class="segunda-parte__icone">
+                        <img class="segunda-parte__icone-favorito" src="../image/Favoritos.svg">
+                        <img class="segunda-parte__icone-compras" src="../image/Compras.png">
                     </div>
 
-                    <div data-segundaSecao="image" class="image">
-                        <a href="#"><img src="../image/Gestão2.png" alt=""></a>
-                    </div>
-
-                    <div data-segundaSecao="image" class="image">
-                        <a href="#"><img src="../image/Construct2.png" alt=""></a>
+                    <div class="segunda-parte__botao">
+                        <a class="segunda-parte__botao___btn" type="submit" href="#">Saiba mais</a>
                     </div>
                 </div>
             </article>
         </div>
-
-        <article class="card">
-            <div class="card__primeira-parte">
-                <div class="primeira-parte__texto">
-                    <ul class="lista-icon">
-                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
-                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
-                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
-                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
-                        <li><img class="lista-icon__estrela" src="../image/Star 1.png"></li>
-                    </ul>
-                    <h3 class="primeira-parte__titulo-1">Autora do Mês</h3>
-                    <p class="primeira-parte__titulo-2 texto-destaque">Juliana Agarikov</p>
-                    <p class="descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
-                </div>
-
-                <div class="primeira-parte__image">
-                    <img src="../image/Perfil-escritora.png">
-                </div>
-            </div>
-
-            <div class="card__segunda-parte">
-                <div class="segunda-parte__icone">
-                    <img class="segunda-parte__icone-favorito" src="../image/Favoritos.svg">
-                    <img class="segunda-parte__icone-compras" src="../image/Compras.png">
-                </div>
-
-                <div class="segunda-parte__botao">
-                    <a class="segunda-parte__botao___btn" type="submit" href="#">Saiba mais</a>
-                </div>
-            </div>
-        </article>
     </section>
 
     <section class="topicos">

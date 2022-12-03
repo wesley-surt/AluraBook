@@ -1,5 +1,5 @@
 .caixa__texto {
-    max-width: 18.7rem;
+    display: inline-block;
 }
 
 .caixa__texto___titulo {
@@ -13,5 +13,10 @@
 
 .caixa__texto___descricao {
     line-height: 1.5rem;
-    margin: .8rem 0;
+    margin: 1.2rem 0;
+    background: var(--azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 18.7rem;
 }
