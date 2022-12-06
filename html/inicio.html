@@ -20,34 +20,56 @@
 <body>
     <header>
         <div class="cabecalho">
-            <div class="cabecalho__nav">
-                <input type="checkbox" id="menu" class="cabecalho__nav___botao">
+            <div class="cabecalho__nav-bar">
+                <input type="checkbox" id="menu" class="cabecalho__nav-bar___checkbox">
                 <label for="menu">
                     <span class="icone menu"></span>
                 </label>
 
-                <ul class="cabecalho__nav___menu">
-                    <li class="cabecalho__item icone__menu___categoria">Categoria</li>
-                    <li class="cabecalho__item icone__menu___item"><a href="#">PROGRAMAÇÃO</a></li>
-                    <li class="cabecalho__item icone__menu___item"><a href="#">FRONT-END</a></li>
-                    <li class="cabecalho__item icone__menu___item"><a href="#">INFRAESTRUTURA</a></li>
-                    <li class="cabecalho__item icone__menu___item"><a href="#">BUSINESS</a></li>
-                    <li class="cabecalho__item icone__menu___item"><a href="#">DESIGN & UX</a></li>
+                <ul class="cabecalho__nav-bar___menu">
+                    <li class="nav-bar__menu___item nav-bar__menu___categoria">Categoria</li>
+                    <li class="nav-bar__menu___item"><a href="#">PROGRAMAÇÃO</a></li>
+                    <li class="nav-bar__menu___item"><a href="#">FRONT-END</a></li>
+                    <li class="nav-bar__menu___item"><a href="#">INFRAESTRUTURA</a></li>
+                    <li class="nav-bar__menu___item"><a href="#">BUSINESS</a></li>
+                    <li class="nav-bar__menu___item"><a href="#">DESIGN & UX</a></li>
                 </ul>
                 
                 <i class="icone logo"><img src="../image/Logo.svg"></i>
 
-                <span class="cabecalho__imagem-logo"><img src="../image/AluraBooks.png"></span>
+                <span class="cabecalho__nav-bar___imagem-logo"><img src="../image/AluraBooks.png"></span>
 
-                <ul class="cabecalho__nav-link">
-                    <div class="nav-link__item">
-                        <a href="#">CATEGORIAS</a>
-                    </div>
-                    <li class="nav-link__item">
-                        <a href="#">FAVORITOS</a>
+                <ul class="cabecalho__nav-bar___menu-secundario">
+                    <li class="nav-bar__menu-secundario___item">
+                        <a href="#" class="menu-secundario__item___item-texto">CATEGORIAS</a>
+
+                        <ul class="menu-secundario__menu-interno">
+                            <a href="#" class="menu-secundario__menu-interno___item">
+                                <li class="menu-interno__item___item-texto">PROGRAMAÇÃO</li>
+                            </a>
+                            <a href="#" class="menu-secundario__menu-interno___item">
+                                <li class="menu-interno__item___item-texto">FRONT-END</li>
+                            </a>
+                            <a href="#" class="menu-secundario__menu-interno___item">
+                                <li class="menu-interno__item___item-texto">INFRAESTRUTURA</li>
+                            </a>
+                            <a href="#" class="menu-secundario__menu-interno___item">
+                                <li class="menu-interno__item___item-texto">BUSINESS</li>
+                            </a>
+                            <a href="#" class="menu-secundario__menu-interno___item">
+                                <li class="menu-interno__item___item-texto">DESIGN & UX</li>
+                            </a>
+                        </ul>
                     </li>
-                    <li class="nav-link__item">
-                        <a href="#">MINHA ESTANTE</a>
+                    <li class="nav-bar__menu-secundario___item">
+                        <a href="#" class="menu-secundario__item___item-texto">FAVORITOS</a>
+                    </li>
+                    <li class="nav-bar__menu-secundario___item">
+                        <a href="#" class="menu-secundario__item___item-texto">MINHA ESTANTE</a>
+                    </li>
+
+                    <li class="nav-bar__menu-secundario___item nav-bar__menu-secundario___menu-interno">
+                        
                     </li>
                 </ul>
             </div>

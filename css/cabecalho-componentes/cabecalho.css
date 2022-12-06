@@ -1,4 +1,5 @@
 @import url(../cabecalho-componentes/icone.css);
+@import url(../cabecalho-componentes/menu/menu.css);
 
 header {
     background: var(--branco);
@@ -10,13 +11,9 @@ header {
     position: relative;
 }
 
-.cabecalho__nav {
+.cabecalho__nav-bar {
     display: flex;
     align-items: center;
-}
-
-.cabecalho__nav-link {
-    display: none;
 }
 
 .cabecalho__nav-icone {
@@ -24,18 +21,6 @@ header {
     align-items: center;
 }
 
-.nav-link__item {
-    display: inline-block;
-    margin: 1.5rem;
-}
-
-.nav-link__item a {
-    text-decoration: none;
-    color: #000;
-    font-family: var(--fonte-principal);
-}
-
-.cabecalho__imagem-logo {
+.cabecalho__nav-bar___imagem-logo {
     margin-right: 3rem;
-    display: none;
 }

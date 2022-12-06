@@ -2,9 +2,8 @@
 
 .banner {
     background: var(--azul-gradiente);
-    opacity: 0.75;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
 }
 
 .caixa {

@@ -5,8 +5,8 @@
 .caixa__descricao {
     color: var(--branco);
     font-family: var(--fonte-principal);
-    font-weight: 500;
-    margin: 1rem 0;
+    font-weight: 400;
+    margin: .8rem 0 1.5rem;
     line-height: 1.4rem;
 }
 
@@ -14,14 +14,13 @@
     border: 1px solid var(--branco);
     color: var(--branco);
     margin: 0 auto;
-    padding: .6rem 4rem;
 }
 
 .pesquisa::placeholder {
     background: url(../../image/Vector.png) left no-repeat;
     color: var(--branco);
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
-    padding: .5rem 1.5rem;
+    padding: .5rem 2rem;
     text-align: center;
 }
