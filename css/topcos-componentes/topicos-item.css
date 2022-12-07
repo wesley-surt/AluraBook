@@ -6,13 +6,11 @@
 
 .lista__link {
     color: var(--branco);
-    font-size: .9rem;
     text-decoration: none;
 }
 
 .lista__link___item {
     margin: .5rem;
-    padding: 1.2rem 1.5rem;
     background: var(--laranja);
 }
 

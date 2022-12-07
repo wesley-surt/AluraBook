@@ -1,9 +1,10 @@
+@import url(../../responsivo/responsivo.css);
 @import url(bolinhas.css);
 @import url(botao.css);
 @import url(imagens.css);
 
 :root {
-    --espaçamento-das-imagens: 1rem;
+    --espacamento-das-imagens: 1rem;
     --margin-top-bottom-das-imagens: .2rem;
     --altura-das-imagens: 19.2rem;
     --largura-das-imagens: 11.5rem;
@@ -18,23 +19,26 @@
 .conteiner-carrossel {
     display: flex;
     flex-direction: column;
-    max-width: calc(var(--largura-das-imagens) * 3 + var(--espaçamento-das-imagens) * 2);
-    overflow: hidden;
+    max-width: calc(var(--largura-das-imagens) * 3 + (var(--espacamento-das-imagens) + var(--espacamento-adicional)) * 2);
     position: relative;
 }
 
-.carrossel-imagens {
+.conteiner-carrossel__slide {
+    overflow: hidden;
+}
+
+.carrossel__slide {
     overflow: auto;
     max-width: inherit;
 }
 
-.carrossel-imagens::-webkit-scrollbar {
+.carrossel__slide::-webkit-scrollbar {
     display: none;
 }
 
-.slide {
+.carrossel__slide___imagens {
     align-items: center;
     display: flex;
-    column-gap: var(--espaçamento-das-imagens);
-    width: calc(var(--largura-das-imagens) * 4 + var(--espaçamento-das-imagens) * 3);
+    column-gap: calc(var(--espacamento-das-imagens) * var(--multiplicador-adicional));
+    width: calc(var(--largura-das-imagens) * 4 + var(--espacamento-das-imagens) * 3);
 }

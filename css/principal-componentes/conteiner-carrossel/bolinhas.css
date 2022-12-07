@@ -1,7 +1,6 @@
 .bolinhas {
     column-gap: .5rem;
     display: flex;
-    margin: 1rem auto;
 }
 
 .bolinha {

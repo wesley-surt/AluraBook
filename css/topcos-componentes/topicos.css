@@ -7,12 +7,9 @@
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-principal);
-    opacity: 0.75;
-    padding: 1rem 0.5rem;
 }
 
 .topicos__titulo {
-    margin: .8rem 0 1.5rem 0;
-    font-size: 1.1rem;
-    font-weight: 400;
+    margin: .6rem 0 2.5rem 0;
+    font-weight: 300;
 }
