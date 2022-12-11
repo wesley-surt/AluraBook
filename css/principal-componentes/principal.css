@@ -12,3 +12,8 @@
     display: block;
     text-align: center;
 }
+
+.principal__conteiner {
+    display: flex;
+    flex-wrap: wrap;
+}

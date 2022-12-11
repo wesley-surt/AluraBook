@@ -66,9 +66,13 @@
     }
 }
 
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 584px) {
     .cabecalho__nav-bar___imagem-logo {
         display: inline-block;
+    }
+
+    .principal__conteiner {
+        justify-content: center;
     }
 
     .cadastrar__caixa {
