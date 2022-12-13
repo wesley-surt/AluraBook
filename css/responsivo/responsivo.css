@@ -1,7 +1,5 @@
 @import url(../principal-componentes/conteiner-carrossel/conteiner-carrossel.css);
 
-
-
 @media screen and (min-width: 0) {
     .cabecalho__nav-bar___imagem-logo {
         display: none;
@@ -61,8 +59,12 @@
         font-size: 1.1rem;
     }
 
-    .lista__link___item {
+    .lista__item___link {
         padding: 1.2rem 1.5rem;
+    }
+
+    .caixa__texto___titulo {
+        font-size: 1.1rem;
     }
 }
 
@@ -135,24 +137,28 @@
         margin: 3.3em 3.5em;
     }
 
-    .topicos__titulo, .lista__link___item {
+    .topicos {
+        padding: 2rem 6.5rem;
+    }
+
+    .topicos__titulo {
+        font-size: 2rem;
+    }
+    
+     .lista__item___link, .caixa__texto___titulo {
         font-size: 1.5rem;
     }
 
-    .lista__link {
+    .topicos__lista___item {
         order: 2;
     }
 
-    .lista__link:first-child, .lista__link:nth-child(7) {
+    .topicos__lista___item:first-child, .topicos__lista___item:nth-child(7) {
         order: 0;
     }
 
-    .lista__link___item {
-        padding: 1.5rem 2rem;
-    }
-
-    .topicos {
-        padding: 2rem 6.5rem;
+    .lista__item___link {
+        padding: 1.8rem 2rem;
     }
 }
 

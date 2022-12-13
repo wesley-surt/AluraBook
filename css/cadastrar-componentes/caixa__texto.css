@@ -4,7 +4,6 @@
 
 .caixa__texto___titulo {
     font-weight: 600;
-    font-size: 1.1rem;
     background: var(--azul-gradiente);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
