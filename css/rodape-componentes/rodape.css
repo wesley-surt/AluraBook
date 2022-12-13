@@ -3,7 +3,6 @@
     background: #F9F9F9;
 }
 
-.rodape__logo-alura img {
+.rodape__logo-alura {
     padding: 1.5rem;
-    width: 6.2rem;
 }
