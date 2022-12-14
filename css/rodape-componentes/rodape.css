@@ -1,9 +1,8 @@
 .rodape {
     border-top: 1px solid #7c7c7c;
     background: #F9F9F9;
-    display: flex;
     font-family: var(--fonte-principal);
-    justify-content: space-around;
+    display: flex;
     padding: 4rem 0;
 }
 
