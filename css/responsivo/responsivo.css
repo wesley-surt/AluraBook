@@ -68,8 +68,16 @@
     }
 
     .rodape {
-        display: flex;
-        justify-content: space-around;
+        padding: 1.1rem;
+        justify-content: flex-start;
+    }
+
+    .rodape__logo-alura {
+        font-size: 1.2rem;
+    }
+    
+    .rodape__lista {
+        display: none;
     }
 }
 
@@ -156,8 +164,7 @@
 
     .topicos__lista___item {
         order: 2;
-    }
-    
+    }    
 
     .topicos__lista___item:first-child, .topicos__lista___item:nth-child(7) {
         order: 0;
@@ -165,6 +172,19 @@
 
     .lista__item___link {
         padding: 1.8rem 2rem;
+    }
+    
+    .rodape {
+        padding: 4rem 0;
+        justify-content: space-around;
+    }
+
+    .rodape__logo-alura {
+        font-size: 1.5rem;
+    }
+
+    .rodape__lista {
+        display: flex;
     }
 }
 
@@ -186,5 +206,15 @@
         grid-template-columns: 29% repeat(3, 1fr);
         grid-template-areas: 
         'logo, lista-1, lista-2, lista-3';
+    }
+
+    .rodape__logo-alura {
+        justify-self: right;
+        margin-right: 8rem;
+    }
+
+    .rodape__lista {
+        border-left: 1px solid #858585;
+        padding-left: 1rem;
     }
 }
